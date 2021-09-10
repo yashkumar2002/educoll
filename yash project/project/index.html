@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<title>Educoll</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="script.js">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/2db8dee917.js" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="ly-light-grey ly-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="ly-sidebar ly-collapse ly-white ly-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="ly-container">
+    <a href="#" onclick="ly_close()" class="ly-hide-large ly-right ly-jumbo ly-padding ly-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=" style="width:45%;" class="ly-round"><br><br>
+    <h4><b>User Name</b></h4>
+    <p class="ly-text-grey">Edit</p>
+   
+  </div>
+  <div class="ly-bar-block">
+    <a href="Home" onclick="ly_close()" class="ly-bar-item ly-button ly-padding ly-text-teal"><i class="fa fa-th-large fa-fw ly-margin-right"></i>Home</a> 
+    <a href="About" onclick="ly_close()" class="ly-bar-item ly-button ly-padding"><i class="fa fa-user fa-fw ly-margin-right"></i>ABOUT</a> 
+    <a href="Contact" onclick="ly_close()" class="ly-bar-item ly-button ly-padding"><i class="fa fa-envelope fa-fw ly-margin-right"></i>CONTACT</a>
+    <a href="#logout"  onclick="ly_close()" class="ly-bar-item ly-button ly-padding"><i class="fas fa-sign-out-alt fa-fw ly-margin-right"></i>LOG OUT</a>
+  </div>
+  <div class="ly-panel ly-large">
+    <i class="fa fa-facebook-official ly-hover-opacity"></i>
+    <i class="fa fa-instagram ly-hover-opacity"></i>
+    <i class="fa fa-snapchat ly-hover-opacity"></i>
+    <i class="fa fa-pinterest-p ly-hover-opacity"></i>
+    <i class="fa fa-twitter ly-hover-opacity"></i>
+    <i class="fa fa-linkedin ly-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="ly-overlay ly-hide-large ly-animate-opacity" onclick="ly_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="ly-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/lyimages/avatar_g2.jpg" style="width:65px;" class="ly-circle ly-right ly-margin ly-hide-large ly-hover-opacity"></a>
+    <span class="ly-button ly-hide-large ly-xxlarge ly-hover-text-grey" onclick="ly_open()"><i class="fa fa-bars"></i></span>
+    <div class="ly-container">
+    <h1 style="float: left;"><b>Educoll</b></h1>
+    <input class="l" type="checkbox" style="float: right;margin-top: 20px;">
+    
+        
+    
+        <div class="search-box" style="float: right;margin-top:63px;margin-right: -40px;">
+          <button class="btn-search"><i class="fas fa-search"></i></button>
+          <input type="text" class="input-search" placeholder="Type to Search...">
+        </div>
+      
+    <div class="ly-section ly-bottombar " style="padding-top: 60px;padding-bottom: 10px;">
+      
+      <button class="ly-button ly-black">ALL</button>
+      <button class="ly-button ly-white"><i class="fa fa-video ly-margin-right"></i>VIDEOS</button>
+      <button class="ly-button ly-white ly-hide-small"><i class="fa fa-book ly-margin-right"></i>COURSES</button>
+      <button class="ly-button ly-white ly-hide-small"><i class="fa fa-map-pin ly-margin-right"></i>MY LEARNING</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="ly-row-padding">
+    <div class="ly-third ly-container ly-margin-bottom">
+      <img src="https://images.ctfassets.net/hrltx12pl8hq/pgYGuW2X3wHni2PG3dLV0/80a2008f53a645da1db3c1b5260fd3fd/hero_spring_6.jpg?fit=fill&w=800&h=450" alt="Norway" style="width:100% ; height: 220px" class="ly-hover-opacity">
+      <div class="ly-container ly-white">
+        <button  class="1"><span>Enroll Now</span></button>
+      </div>
+    </div>
+    <div class="ly-third ly-container ly-margin-bottom">
+      <img src="https://1.img-dpreview.com/files/p/TS600x400~sample_galleries/0724895971/0009166108.jpg" alt="Norway" style="width:100% ;height: 220px" class="ly-hover-opacity">
+      <div class="ly-container ly-white">
+        <button class="2"><span>Enroll Now</span></button>
+      </div>
+    </div>
+    <div class="ly-third ly-container">
+      <img src="https://www.happywalagift.com/wp-content/uploads/2020/12/Download-Merry-Christmas-HD-4k-Images-Wallpapers-6.jpg" alt="Norway" style="width:100% ;height: 220px" class="ly-hover-opacity">
+      <div class="ly-container ly-white">
+        <button  class="3"><span>Enroll Now</span></button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="ly-row-padding">
+    <div class="ly-third ly-container ly-margin-bottom">
+      <img src="https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270" alt="Norway" style="width:100% ;height: 220px" class="ly-hover-opacity">
+      <div class="ly-container ly-white">
+        <button   class="4"><span>Enroll Now</span></button>
+      </div>
+    </div>
+    <div class="ly-third ly-container ly-margin-bottom">
+      <img src="http://discoverinquiry.weebly.com/uploads/6/1/0/9/61095575/4132401_orig.jpg" alt="Norway" style="width:100% ;height: 220px" class="ly-hover-opacity">
+      <div class="ly-container ly-white">
+        <button   class="5"><span>Enroll Now</span></button>
+      </div>
+    </div>
+    <div class="ly-third ly-container">
+      <img src="https://xenforo.com/community/media/kingfish.2125/full" alt="Norway" style="width:100% ;height: 220px" class="ly-hover-opacity">
+      <div class="ly-container ly-white">
+        <button  class="6"><span>Enroll Now</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="ly-center ly-padding-32">
+    <div class="ly-bar">
+      <a href="#" class="ly-bar-item ly-button ly-hover-black">«</a>
+      <a href="#" class="ly-bar-item ly-black ly-button">1</a>
+      <a href="#" class="ly-bar-item ly-button ly-hover-black">2</a>
+      <a href="#" class="ly-bar-item ly-button ly-hover-black">3</a>
+      <a href="#" class="ly-bar-item ly-button ly-hover-black">4</a>
+      <a href="#" class="ly-bar-item ly-button ly-hover-black">»</a>
+    </div>
+  </div>
+
+  
+   
+  <div class="ly-container ly-padding-large ly-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="ly-row-padding ly-center ly-padding-24" style="margin:0 -16px">
+      <div class="ly-third ly-dark-grey">
+        <p><i class="fa fa-envelope ly-xxlarge ly-text-light-grey"></i></p>
+        <p>gahlotyash13@gmail.com</p>
+      </div>
+      <div class="ly-third ly-teal">
+        <p><i class="fa fa-map-marker ly-xxlarge ly-text-light-grey"></i></p>
+        <p>Uttar Pradesh,India</p>
+      </div>
+      <div class="ly-third ly-dark-grey">
+        <p><i class="fa fa-phone ly-xxlarge ly-text-light-grey"></i></p>
+        <p>7906565317</p>
+      </div>
+    </div>
+    <hr class="ly-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="ly-section">
+        <label>Name</label>
+        <input class="ly-input ly-border" type="text" name="Name" required>
+      </div>
+      <div class="ly-section">
+        <label>Email</label>
+        <input class="ly-input ly-border" type="text" name="Email" required>
+      </div>
+      <div class="ly-section">
+        <label>Message</label>
+        <input class="ly-input ly-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="ly-button ly-black ly-margin-bottom"><i class="fa fa-paper-plane ly-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  
+  
+   
+  </footer>
+  
+  <div class="ly-black ly-center ly-padding-24">Powered by <a href="#" title="Educoll Team" target="_blank" class="ly-hover-opacity">Educoll Team</a></div>
+
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function ly_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function ly_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

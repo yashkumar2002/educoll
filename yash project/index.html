@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<title>EduColl</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+<script src="https://kit.fontawesome.com/2db8dee917.js" crossorigin="anonymous"></script>
+<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="ly-light-grey ly-content" style="max-width:1600px">
+<div id="bodyId">
+  <form id="login">
+    <h1>Log In</h1>
+    <fieldset id="inputs">
+        <input id="username" type="text" placeholder="Username" autofocus required>   
+        <input id="password" type="password" placeholder="Password" required>
+    </fieldset>
+    <fieldset id="actions">
+        <input type="submit" id="buttons" value="Log in">
+        <a href="">Forgot your password?</a><a href="">Register</a>
+    </fieldset>
+</form>
+</div>
+<!-- after Login  -->
+  <div id="Fpage">
+<!-- Sidebar/menu -->
+<nav class="ly-sidebar ly-collapse ly-white ly-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="ly-container">
+    <a href="#" onclick="ly_close()" class="ly-hide-large ly-right ly-jumbo ly-padding ly-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?k=20&m=1209654046&s=612x612&w=0&h=Atw7VdjWG8KgyST8AXXJdmBkzn0lvgqyWod9vTb2XoE=" style="width:45%;border-radius:100%;" class="ly-round"><br><br>
+    <h4><b>User Name</b></h4>
+    <p class="ly-text-grey">Edit</p>
+  </div>
+  <div class="ly-bar-block">
+    <a href="#Home" onclick="ly_close()" class="ly-bar-item ly-button ly-padding ly-text-teal"><i class="fa fa-th-large fa-fw ly-margin-right"></i>HOME</a> 
+    <a href="#about" onclick="ly_close()" class="ly-bar-item ly-button ly-padding"><i class="fa fa-user fa-fw ly-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="ly_close()" class="ly-bar-item ly-button ly-padding"><i class="fa fa-envelope fa-fw ly-margin-right"></i>CONTACT</a>
+    <a href="#logout"  onclick="ly_close()" class="ly-bar-item ly-button ly-padding"><i class="fas fa-sign-out-alt fa-fw ly-margin-right"></i>LOG OUT</a>
+</div>
+  <div class="ly-panel ly-large">
+    <i class="fa fa-facebook-official ly-hover-opacity"></i>
+    <i class="fa fa-instagram ly-hover-opacity"></i>
+    <i class="fa fa-snapchat ly-hover-opacity"></i>
+    <i class="fa fa-pinterest-p ly-hover-opacity"></i>
+    <i class="fa fa-twitter ly-hover-opacity"></i>
+    <i class="fa fa-linkedin ly-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="ly-overlay ly-hide-large ly-animate-opacity" onclick="ly_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="ly-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"></a><img  src="https://threewill.com/wp-content/uploads/kirk-liemohn-full-cropped.jpg" style="width:65px;" class="ly-circle ly-right ly-margin ly-hide-large ly-hover-opacity"></a>
+    <span class="ly-button ly-hide-large ly-xxlarge ly-hover-text-grey" onclick="ly_open()"><i class="fa fa-bars"></i></span>
+    <div class="ly-container">
+    <h1 style="float: left;"><b>EduColl</b></h1>
+    <input class="l" type="checkbox" style="float: right;margin-top: 20px;">
+    
+        
+    
+        <div class="search-box" style="float: right;margin-top:63px;margin-right: -40px;">
+          <button class="btn-search"><i class="fas fa-search"></i></button>
+          <input type="text" class="input-search" placeholder="Type to Search...">
+        </div>
+      
+    <div class="ly-section ly-bottombar " style="padding-top: 60px;padding-bottom: 10px;">
+      <!-- <span class="ly-margin-right">Filter:</span>  -->
+      <button class="ly-button ly-black">ALL</button>
+      <button class="ly-button ly-white"><i class="fa fa-video ly-margin-right"></i>Videos</button>
+      <button class="ly-button ly-white ly-hide-small"><i class="fa fa-book ly-margin-right"></i>Course</button>
+      <button class="ly-button ly-white ly-hide-small">My Learning</button>
+    </div>
+    </div>
+  </header>
+  
+  <div class="ly-mright col-8 overflow-scroll" style="padding-left: 0%;padding-right: 0%;"> <video id="videoPlayer" class="video-js vjs-big-play-centered" height="640px" width="780px" data-setup="{}" >
+    <source src="Yaari Tod Deni.mp4?SD" type="video/mp4"> 
+    <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+</video>
+</div>
+  <div class="ly-mleft col-4 overflow-auto">
+    <div class="flex-container">
+      <div>
+        <img class="irmg"src="https://p.kindpng.com/picc/s/130-1309516_fotos-do-marshmallow-dj-dj-marshmallow-png-transparent.png"  alt="">
+       <div class="ftext">
+        <h3>closure</h3>
+        <h7 style="font-size: 12px;">12 min</h7>
+       </div>
+      </div>
+
+      <div>
+        <img class="irmg"src="https://p.kindpng.com/picc/s/130-1309516_fotos-do-marshmallow-dj-dj-marshmallow-png-transparent.png"  alt="">
+       <div class="ftext">
+        <h3>closure</h3>
+        <h7 style="font-size: 12px;">12 min</h7>
+       </div>
+      </div>
+      <div>
+        <img class="irmg"src="https://p.kindpng.com/picc/s/130-1309516_fotos-do-marshmallow-dj-dj-marshmallow-png-transparent.png"  alt="">
+       <div class="ftext">
+        <h3>closure</h3>
+        <h7 style="font-size: 12px;">12 min</h7>
+       </div>
+      </div>
+      <div>
+        <img class="irmg"src="https://p.kindpng.com/picc/s/130-1309516_fotos-do-marshmallow-dj-dj-marshmallow-png-transparent.png"  alt="">
+       <div class="ftext">
+        <h3>closure</h3>
+        <h7 style="font-size: 12px;">12 min</h7>
+       </div>
+      </div>
+      <div>
+        <img class="irmg"src="https://p.kindpng.com/picc/s/130-1309516_fotos-do-marshmallow-dj-dj-marshmallow-png-transparent.png"  alt="">
+       <div class="ftext">
+        <h3>closure</h3>
+        <h7 style="font-size: 12px;">12 min</h7>
+       </div>
+      </div>
+      <div>
+        <img class="irmg"src="https://p.kindpng.com/picc/s/130-1309516_fotos-do-marshmallow-dj-dj-marshmallow-png-transparent.png"  alt="">
+       <div class="ftext">
+        <h3>closure</h3>
+        <h7 style="font-size: 12px;">12 min</h7>
+       </div>
+      </div>
+      <div>
+        <img class="irmg"src="https://p.kindpng.com/picc/s/130-1309516_fotos-do-marshmallow-dj-dj-marshmallow-png-transparent.png"  alt="">
+       <div class="ftext">
+        <h3>closure</h3>
+        <h7 style="font-size: 12px;">12 min</h7>
+       </div>
+      </div>    
+      <div>
+        <img class="irmg"src="https://p.kindpng.com/picc/s/130-1309516_fotos-do-marshmallow-dj-dj-marshmallow-png-transparent.png"  alt="">
+       <div class="ftext">
+        <h3>closure</h3>
+        <h7 style="font-size: 12px;">12 min</h7>
+       </div>
+      </div>    </div>
+  </div>
+    
+
+  
+
+    <hr class="ly-opacity">
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-12">
+              <div class="d-flex flex-column comment-section">
+                  <div class="bg-white p-2">
+                      <div class="d-flex flex-row user-info"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40">
+                          <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Marry Andrews</span><span class="date text-black-50">Shared publicly - Jan 2020</span></div>
+                      </div>
+                      <div class="mt-2">
+                          <p id="comment-text"></p>
+                      </div>
+                  </div>
+                  <div class="bg-white">
+                      <div class="d-flex flex-row fs-12">
+                          <div class="like p-2 cursor"><i class="fa fa-thumbs-o-up"></i><span class="ml-1">Like</span></div>
+                          <div class="like p-2 cursor"><i class="fa fa-commenting-o"></i><span class="ml-1">Comment</span></div>
+                          <div class="like p-2 cursor"><i class="fa fa-share"></i><span class="ml-1">Share</span></div>
+                      </div>
+                  </div>
+                  <div class="bg-light p-2">
+                      <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://threewill.com/wp-content/uploads/kirk-liemohn-full-cropped.jpg" width="40"><textarea class="form-control ml-1 shadow-none textcmt" type="text"></textarea></div>
+                      <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none  post" onclick="post()" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+ 
+  
+  
+  <div class="ly-black ly-center ly-padding-24">Powered by Educoll Team </div>
+
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-hotkeys/0.2.27/videojs.hotkeys.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
